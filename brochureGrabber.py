@@ -6,7 +6,7 @@ from sys import argv
 
 resources = open('resources.txt', 'r+')
 downloads = open('downloads.txt', 'r+')
-data = open('sitecore_data.json', 'r')
+data = open('sciencell_data.json', 'r')
 resources.truncate()
 downloads.truncate()
 
@@ -25,7 +25,7 @@ def getResourceTree(url):
         resources.write(newWord)
     
 
-getResourceTree("http://www.sitecore.net/en/resources/index")
+getResourceTree("http://www.sciencellonline.com/resources/index")
 
 resources.close()
 downloads.close()
